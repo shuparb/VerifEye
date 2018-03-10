@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Patient_Detection</class>
+ <widget class="QWidget" name="Patient_Detection">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1142</width>
+    <height>734</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Patient_Detection</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="layout_full_name">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_fullName_head">
+           <property name="styleSheet">
+            <string notr="true">font-size: 36px;
+background-color: #c4c4c4;</string>
+           </property>
+           <property name="text">
+            <string>Full Name: </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_full_name">
+           <property name="styleSheet">
+            <string notr="true">font-size: 36px;
+background-color: #c4c4c4;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <layout class="QHBoxLayout" name="layout_eyepatch">
+           <item>
+            <widget class="QLabel" name="label_eyepatchID_head">
+             <property name="styleSheet">
+              <string notr="true">font-size: 36px;
+background-color: #c4c4c4;</string>
+             </property>
+             <property name="text">
+              <string>Eyepatch ID: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_eid">
+             <property name="styleSheet">
+              <string notr="true">font-size: 36px;
+background-color: #c4c4c4;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="layout_hid">
+           <item>
+            <widget class="QLabel" name="label_hid_head">
+             <property name="styleSheet">
+              <string notr="true">font-size: 36px;
+background-color: #c4c4c4;</string>
+             </property>
+             <property name="text">
+              <string>HID: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_hospital">
+             <property name="styleSheet">
+              <string notr="true">font-size: 36px;
+background-color: #c4c4c4;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="pushButton_preELA">
+           <property name="text">
+            <string>Show ELA</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGraphicsView" name="graphicsView_preImage"/>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="textEdit_preInfo"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QPushButton" name="pushButton_postELA">
+           <property name="text">
+            <string>Show ELA</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGraphicsView" name="graphicsView_postImage"/>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="textEdit_postInfo"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="spacing">
+        <number>200</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pushButton_task">
+         <property name="styleSheet">
+          <string notr="true">font-size: 28px;</string>
+         </property>
+         <property name="text">
+          <string>STEP DETECT 1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_recog">
+         <property name="styleSheet">
+          <string notr="true">font-size: 26px;
+</string>
+         </property>
+         <property name="text">
+          <string>Recognize-&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

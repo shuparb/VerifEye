@@ -1,0 +1,20 @@
+patient: 
+pid int 
+first_name string
+last_name string
+pre_image_path	string
+post_image_path	string 
+eyepath	int 
+hospital_id int 
+state string 
+
+hospital: 
+hospital_id int 
+hospital_name string 
+hlocation string 
+
+create table hospitals (hid integer primary key autoincrement, hname varchar2, hloc varchar2);
+
+create table patients (pid integer primary key autoincrement, date varchar2, fname varchar2, lname varchar2, pre_img_path varchar2, post_img_path varchar2, eid varchar2, hid int, state varchar2, verdict varchar2, real_verdict varchar2, pre_face_path varchar2, post_face_path varchar2, pre_hface_path varchar2, post_hface_path varchar2, pre_rot_face_path varchar2, post_rot_face_path varchar2, pmat_path varchar2, result varchar2, foreign key (hid) references hospital(hid));
+
+insert into patients (date date1, fname, lname, pre_img_path, post_img_path, eid, hid, verdict, real_verdict, pre_face_path, post_face_path, pre_hface_path, post_hface_path, pre_rot_face_path, post_rot_face_path, pmat_path)

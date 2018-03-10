@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Patient_Repeats</class>
+ <widget class="QWidget" name="Patient_Repeats">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1505</width>
+    <height>811</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Patient_Repeats</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_7">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_fullName_head">
+           <property name="styleSheet">
+            <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+           </property>
+           <property name="text">
+            <string>Full Name: </string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_full_name">
+           <property name="styleSheet">
+            <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_eyepatchID_head">
+             <property name="styleSheet">
+              <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+             </property>
+             <property name="text">
+              <string>Eyepatch ID: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_eid">
+             <property name="styleSheet">
+              <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_hid_head">
+             <property name="styleSheet">
+              <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+             </property>
+             <property name="text">
+              <string>HID: </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_hospital">
+             <property name="styleSheet">
+              <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QLabel" name="label_postHalf_head">
+             <property name="styleSheet">
+              <string notr="true">font-size: 26px;
+</string>
+             </property>
+             <property name="text">
+              <string>POST HALF</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGraphicsView" name="graphicsView_preHalf"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_preHalf_head">
+             <property name="styleSheet">
+              <string notr="true">font-size: 26px;
+</string>
+             </property>
+             <property name="text">
+              <string>PRE HALF</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGraphicsView" name="graphicsView_postHalf"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QListWidget" name="preList"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_preView">
+             <property name="text">
+              <string>View</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QListWidget" name="postList"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_postView">
+             <property name="text">
+              <string>View</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

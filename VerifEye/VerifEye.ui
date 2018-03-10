@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VerifEyeClass</class>
+ <widget class="QMainWindow" name="VerifEyeClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1159</width>
+    <height>776</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VerifEye</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="num_patients">
+          <property name="styleSheet">
+           <string notr="true">font-size: 32px;
+color: blue;
+background-color: lightgray;</string>
+          </property>
+          <property name="text">
+           <string>Number of Patients: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="num_patients_2">
+          <property name="styleSheet">
+           <string notr="true">font-size: 32px;
+color: blue;
+background-color: lightgray;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="num_accepted">
+          <property name="styleSheet">
+           <string notr="true">font-size: 32px;
+color: green;
+background-color: lightgray;</string>
+          </property>
+          <property name="text">
+           <string>Number of Accepted Patients: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="num_accepted_2">
+          <property name="styleSheet">
+           <string notr="true">font-size: 32px;
+color: green;
+background-color: lightgray;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="num_rejected">
+          <property name="styleSheet">
+           <string notr="true">font-size: 32px;
+color: red;
+background-color: lightgray;
+</string>
+          </property>
+          <property name="text">
+           <string>Number of Rejected Patients: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="num_rejected_2">
+          <property name="styleSheet">
+           <string notr="true">font-size: 32px;
+color: red;
+background-color: lightgray;
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="num_errored">
+          <property name="styleSheet">
+           <string notr="true">font-size: 32px;
+color: #fffb42;
+background-color: lightgray;</string>
+          </property>
+          <property name="text">
+           <string>Number of Errored Patients: </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="num_errored_2">
+          <property name="styleSheet">
+           <string notr="true">font-size: 32px;
+color: #fffb42;
+background-color: lightgray;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableView" name="patient_table">
+        <property name="styleSheet">
+         <string notr="true">font-size: 25px;</string>
+        </property>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="pushButton_show">
+          <property name="text">
+           <string>Show</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_refresh">
+          <property name="text">
+           <string>Refresh</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="remove">
+          <property name="text">
+           <string>Remove</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1159</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNewPatient"/>
+    <addaction name="actionOpen_Patient"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit_2"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNewPatient">
+   <property name="text">
+    <string>New Patient</string>
+   </property>
+  </action>
+  <action name="actionOpen_Patient">
+   <property name="text">
+    <string>Open Patient</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </action>
+  <action name="actionExit_2">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="VerifEye.qrc"/>
+ </resources>
+ <connections/>
+</ui>

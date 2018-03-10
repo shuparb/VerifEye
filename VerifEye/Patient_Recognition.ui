@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Patient_Recognition</class>
+ <widget class="QWidget" name="Patient_Recognition">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1332</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Patient_Recognition</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_10">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="label_fullName_head">
+               <property name="styleSheet">
+                <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+               </property>
+               <property name="text">
+                <string>Full Name: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_full_name">
+               <property name="styleSheet">
+                <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QLabel" name="label_eyepatchID_head">
+                 <property name="styleSheet">
+                  <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+                 </property>
+                 <property name="text">
+                  <string>Eyepatch ID: </string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_eid">
+                 <property name="styleSheet">
+                  <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QLabel" name="label_hid_head">
+                 <property name="styleSheet">
+                  <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+                 </property>
+                 <property name="text">
+                  <string>HID: </string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_hospital">
+                 <property name="styleSheet">
+                  <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_resolved_head">
+             <property name="styleSheet">
+              <string notr="true">font-size: 32px;
+</string>
+             </property>
+             <property name="text">
+              <string>Resolved faces</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <widget class="QLabel" name="label_preHalf_head">
+                 <property name="styleSheet">
+                  <string notr="true">font-size: 26px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>PRE HALF</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGraphicsView" name="graphicsView_preHalf"/>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QLabel" name="label_postHalf_head">
+                 <property name="styleSheet">
+                  <string notr="true">font-size: 26px;
+</string>
+                 </property>
+                 <property name="text">
+                  <string>POST HALF</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGraphicsView" name="graphicsView_postHalf"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <item>
+          <widget class="QPushButton" name="pushButton_recog">
+           <property name="styleSheet">
+            <string notr="true">font-size: 32px;
+</string>
+           </property>
+           <property name="text">
+            <string>Run Recognizer</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <property name="spacing">
+            <number>30</number>
+           </property>
+           <property name="leftMargin">
+            <number>80</number>
+           </property>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <item>
+                <widget class="QLabel" name="label_verdict_head">
+                 <property name="styleSheet">
+                  <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+                 </property>
+                 <property name="text">
+                  <string>Verdict: </string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label">
+                 <property name="styleSheet">
+                  <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <widget class="QLabel" name="label_probability_head">
+                 <property name="styleSheet">
+                  <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+                 </property>
+                 <property name="text">
+                  <string>Probability: </string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_probability">
+                 <property name="styleSheet">
+                  <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="double_diff">
+             <property name="styleSheet">
+              <string notr="true">font-size: 40px;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <widget class="QLabel" name="label_real_verdict_head">
+         <property name="styleSheet">
+          <string notr="true">font-size: 32px;
+background-color: #c4c4c4;</string>
+         </property>
+         <property name="text">
+          <string> Final Verdict: </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <widget class="QPushButton" name="pushButton_same">
+           <property name="styleSheet">
+            <string notr="true">font-size: 28px;
+</string>
+           </property>
+           <property name="text">
+            <string>Same</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_different">
+           <property name="styleSheet">
+            <string notr="true">font-size: 28px;
+</string>
+           </property>
+           <property name="text">
+            <string>Different</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <zorder>graphicsView_preHalf</zorder>
+  <zorder>graphicsView_postHalf</zorder>
+  <zorder>label_preHalf_head</zorder>
+  <zorder>label_postHalf_head</zorder>
+  <zorder>label_resolved_head</zorder>
+  <zorder>label_verdict</zorder>
+  <zorder>label_verdict_head</zorder>
+  <zorder>label_probability_head</zorder>
+  <zorder>label</zorder>
+  <zorder>label_full_name</zorder>
+  <zorder>pushButton_same</zorder>
+  <zorder>label_real_verdict_head</zorder>
+  <zorder>pushButton_different</zorder>
+  <zorder>label_fullName_head</zorder>
+  <zorder>pushButton_recog</zorder>
+  <zorder>label_probability</zorder>
+  <zorder>label_eid</zorder>
+  <zorder>label_eyepatchID_head</zorder>
+  <zorder>label_hid_head</zorder>
+  <zorder>label_hospital</zorder>
+  <zorder>double_diff</zorder>
+  <zorder></zorder>
+  <zorder></zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
